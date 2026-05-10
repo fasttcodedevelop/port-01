@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ====================================================
+         STEP 1 — Change page title
+         Format: "Your Name — Your Role"
+    ==================================================== -->
+    <title>Your Name — Fresh Graduate</title>
+
+    <!-- ====================================================
+         STEP 2 — Change theme color (shows on mobile browser bar)
+         Must match --accent in css/theme.css
+    ==================================================== -->
+    <meta name="theme-color" content="#00583c">
+
+    <meta name="description" content="Portfolio of [Your Name] — [Your Role]">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+    <!-- Google Fonts — change font name in theme.css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar">
+        <!-- STEP 3 — Change logo to your name -->
+        <div class="nav-logo">Your Name.</div>
+
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- STEP 4 — Make sure resume.pdf is in the root folder -->
+            <li><a href="resume.pdf" class="resume-link">Resume</a></li>
+        </ul>
+
+        <button class="nav-burger" aria-label="Toggle menu">☰</button>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero reveal" id="hero">
+        <div class="hero-text">
+            <p class="hero-greeting">Hi, I'm 👋</p>
+
+            <!-- STEP 5 — Change to your name -->
+            <h1 class="hero-name">Your Name</h1>
+
+            <!-- STEP 6 — Change role & major -->
+            <p class="hero-role">Fresh Graduate — <span>Computer Science</span></p>
+
+            <!-- STEP 7 — Change bio (1-2 sentences, keep it short) -->
+            <p class="hero-desc">
+                A passionate fresh graduate eager to learn, build, and grow
+                with a dynamic team. Open to work and internship opportunities.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Hire Me</a>
+                <!-- STEP 8 — Make sure resume.pdf is in root folder -->
+                <a href="resume.pdf" class="btn btn-outline" download>Download CV</a>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <!-- STEP 9 — Replace with your photo
+                 Recommended: square image, min 500x500px
+                 Save as img/photo.jpg -->
+            <img src="img/profile picture.png" alt="Profile Photo">
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about reveal" id="about">
+        <div class="about-inner">
+            <div class="about-label">About Me</div>
+            <h2 class="about-title">Who Am I?</h2>
+
+            <!-- STEP 10 — Write your own bio (3-4 sentences) -->
+            <p class="about-desc">
+                I graduated from [University Name] in [Year] with a degree in [Major].
+                During my studies, I was actively involved in various organizations and
+                worked on several web and mobile projects. I have a strong interest in
+                web development and UI/UX design, and I'm excited to keep growing and
+                contributing to a great team.
+            </p>
+
+            <div class="about-info">
+                <!-- STEP 11 — Fill in your personal info -->
+                <div class="info-item">
+                    <span class="info-label">Name</span>
+                    <span class="info-value">Your Full Name</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Education</span>
+                    <span class="info-value">B.Sc. Computer Science</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">City, Country</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Status</span>
+                    <span class="info-value">Available for Work ✅</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="skills reveal" id="skills">
+        <div class="skills-inner">
+            <div class="skills-label">Skills</div>
+            <h2 class="skills-title">What I Master</h2>
+            <p class="skills-desc">
+                Technologies and tools I use to bring projects to life.
+            </p>
+
+            <div class="skills-grid">
+
+                <!-- STEP 12 — Edit skills below
+                     data-persen = bar width (number only, no %)
+                     data-target = same number (for counter animation) -->
+
+                <div class="skills-card" data-persen="85">
+                    <div class="skills-icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="skills-info">
+                        <div class="skills-name">HTML & CSS</div>
+                        <div class="skills-bar">
+                            <div class="skills-fill" style="--persen: 0%"></div>
+                        </div>
+                        <div class="skills-persen">
+                            <span class="angka" data-target="85">0</span>%
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-card" data-persen="75">
+                    <div class="skills-icon"><i class="fa-brands fa-js"></i></div>
+                    <div class="skills-info">
+                        <div class="skills-name">JavaScript</div>
+                        <div class="skills-bar">
+                            <div class="skills-fill" style="--persen: 0%"></div>
+                        </div>
+                        <div class="skills-persen">
+                            <span class="angka" data-target="75">0</span>%
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-card" data-persen="65">
+                    <div class="skills-icon"><i class="fa-brands fa-react"></i></div>
+                    <div class="skills-info">
+                        <div class="skills-name">React JS</div>
+                        <div class="skills-bar">
+                            <div class="skills-fill" style="--persen: 0%"></div>
+                        </div>
+                        <div class="skills-persen">
+                            <span class="angka" data-target="65">0</span>%
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-card" data-persen="80">
+                    <div class="skills-icon"><i class="fa-brands fa-figma"></i></div>
+                    <div class="skills-info">
+                        <div class="skills-name">Figma</div>
+                        <div class="skills-bar">
+                            <div class="skills-fill" style="--persen: 0%"></div>
+                        </div>
+                        <div class="skills-persen">
+                            <span class="angka" data-target="80">0</span>%
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more skills by copying one block above -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="projects reveal" id="projects">
+        <div class="projects-inner">
+            <div class="projects-label">Projects</div>
+            <h2 class="projects-title">My Projects</h2>
+            <p class="projects-desc">
+                Here are some projects I've built and worked on.
+            </p>
+
+            <div class="projects-grid">
+
+                <!-- STEP 13 — Edit project cards below
+                     Replace img/project-1.jpg with your screenshot
+                     Replace # in href with your live demo & GitHub links -->
+
+                <div class="projects-card">
+                    <div class="projects-thumb">
+                        <img class="projects-thumb-placeholder" src="img/Project photo.png" alt="Project 1">
+                        <div class="projects-overlay">
+                            <a href="#" target="_blank" class="projects-link">Live Demo →</a>
+                            <a href="#" target="_blank" class="projects-link">GitHub →</a>
+                        </div>
+                    </div>
+                    <div class="projects-body">
+                        <div class="projects-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3 class="projects-name">Project Name Here</h3>
+                        <p class="projects-desc-card">
+                            Short description of what this project does and what problems it solves.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projects-card">
+                    <div class="projects-thumb">
+                        <img class="projects-thumb-placeholder" src="img/Project photo black.png" alt="Project 2">
+                        <div class="projects-overlay">
+                            <a href="#" target="_blank" class="projects-link">Live Demo →</a>
+                            <a href="#" target="_blank" class="projects-link">GitHub →</a>
+                        </div>
+                    </div>
+                    <div class="projects-body">
+                        <div class="projects-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <h3 class="projects-name">Project Name Here</h3>
+                        <p class="projects-desc-card">
+                            Short description of what this project does and what problems it solves.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projects-card">
+                    <div class="projects-thumb">
+                        <img class="projects-thumb-placeholder" src="img/Project photo.png" alt="Project 3">
+                        <div class="projects-overlay">
+                            <a href="#" target="_blank" class="projects-link">Live Demo →</a>
+                            <a href="#" target="_blank" class="projects-link">GitHub →</a>
+                        </div>
+                    </div>
+                    <div class="projects-body">
+                        <div class="projects-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <h3 class="projects-name">Project Name Here</h3>
+                        <p class="projects-desc-card">
+                            Short description of what this project does and what problems it solves.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Add more cards by copying one block above -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact reveal" id="contact">
+        <div class="contact-inner">
+
+            <div class="contact-header">
+                <div class="contact-label">Contact</div>
+                <h2 class="contact-title">Let's Collaborate! 🤝</h2>
+                <p class="contact-desc">
+                    I'm currently open to work or internship opportunities.
+                    Feel free to reach out — I'll get back to you as soon as possible!
+                </p>
+
+                <!-- STEP 14 — Change to your email -->
+                <a href="mailto:your@email.com" class="contact-email">
+                    your@email.com
+                </a>
+            </div>
+
+            <!-- STEP 15 — Change all links & values below -->
+            <div class="contact-cards">
+
+                <a href="https://wa.me/62XXXXXXXXXX" target="_blank" class="contact-card">
+                    <div class="contact-card-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="contact-card-info">
+                        <span class="contact-card-label">WhatsApp</span>
+                        <span class="contact-card-value">+62 xxx-xxxx-xxxx</span>
+                    </div>
+                    <div class="contact-card-arrow"><i class="fa-solid fa-arrow-right fa-xs"></i></div>
+                </a>
+
+                <a href="https://linkedin.com/in/username" target="_blank" class="contact-card">
+                    <div class="contact-card-icon"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="contact-card-info">
+                        <span class="contact-card-label">LinkedIn</span>
+                        <span class="contact-card-value">linkedin.com/in/username</span>
+                    </div>
+                    <div class="contact-card-arrow"><i class="fa-solid fa-arrow-right fa-xs"></i></div>
+                </a>
+
+                <a href="https://github.com/username" target="_blank" class="contact-card">
+                    <div class="contact-card-icon"><i class="fa-brands fa-github"></i></div>
+                    <div class="contact-card-info">
+                        <span class="contact-card-label">GitHub</span>
+                        <span class="contact-card-value">github.com/username</span>
+                    </div>
+                    <div class="contact-card-arrow"><i class="fa-solid fa-arrow-right fa-xs"></i></div>
+                </a>
+
+                <a href="https://instagram.com/username" target="_blank" class="contact-card">
+                    <div class="contact-card-icon"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="contact-card-info">
+                        <span class="contact-card-label">Instagram</span>
+                        <span class="contact-card-value">@username</span>
+                    </div>
+                    <div class="contact-card-arrow"><i class="fa-solid fa-arrow-right fa-xs"></i></div>
+                </a>
+
+            </div>
+
+            <!-- STEP 16 — Change availability date -->
+            <div class="contact-status">
+                <span class="status-dot"></span>
+                <span>Available for work or internship — <strong>starting [Month Year]</strong></span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <!-- STEP 17 — Change to your name -->
+                <div class="footer-logo">Your Name.</div>
+                <ul class="footer-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <!-- STEP 18 — Change name & year -->
+                <p>© 2025 <strong>Your Name</strong>. All Rights Reserved.</p>
+                <a href="#hero" class="footer-totop">
+                    Back to top <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
